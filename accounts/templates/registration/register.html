@@ -1,0 +1,16 @@
+{% extends 'climey/index.html' %}
+
+{% block title %}- Registration{% endblock %}
+
+<div class ="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 panel panel-default">
+             <div class="alert alert-info">please enter your account informations.</div>
+             <from action="" method="post">
+                 {{form.as_p}}
+                 {% csrf_token %}}
+                 <input class="btn btn-primary" type="submit" value ="Register">
+             </from>
+        </div>
+        <div class="col-md-2"></div>
+</div>
